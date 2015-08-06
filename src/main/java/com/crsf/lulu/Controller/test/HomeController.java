@@ -24,4 +24,11 @@ public class HomeController {
         m.addAttribute("bdstoken",t);
         return "index";
     }
+    @RequestMapping(value = {"csdn"})
+    public String elm(Model m,String t) {
+        if(t == null||t.length() <= 0)
+            t = "";
+        m.addAttribute("hi",t);
+        return "elm";
+    }
 }
