@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
     @RequestMapping(value = {"/",""})
-    public String home(Model m) {
+    public String home(Model m,String t) {
+        m.addAttribute("bdstoken",t);
         return "index";
     }
     @RequestMapping(value = {"home"})
-    public String index(Model m) {
+    public String index(Model m,String t) {
+        m.addAttribute("bdstoken",t);
         return "index";
     }
 }
