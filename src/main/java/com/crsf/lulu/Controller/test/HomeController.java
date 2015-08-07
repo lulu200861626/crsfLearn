@@ -27,7 +27,7 @@ public class HomeController {
     @RequestMapping(value = {"csdn"})
     public String elm(Model m,String t) {
         if(t == null||t.length() <= 0)
-            t = "";
+            t = "擅长哪一方面";
         m.addAttribute("hi",t);
         return "elm";
     }
